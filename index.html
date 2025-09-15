@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-camera>
+        <a-cursor fuse="true" fuse-timeout="1000"></a-cursor>    
+        </a-camera>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="lightgreen"></a-plane>
+        <a-sphere position="-1 1 -4" radius="0.5" color="#ff00c8"
+        animation="
+        property: position;
+        from: -1 1 -4;
+        to: 1 1 -2;
+        startEvents: click;"
+        animation__2="
+        property: color;
+        from:#ff00c8;
+        to:#00bfff;
+        startEvents: click;"></a-sphere>
+        <a-sphere position="1 1 -4" radius="0.5" color="#00bfff"
+        animation="
+        property: position;
+        from: 1 1 -4;
+        to: -1 1 -2;
+        startEvents: click;"
+        animation__2="
+        property: color;
+        from:#00bfff;
+        to:#ff00c8;
+        startEvents: click;"></a-sphere>
+        </a-scene>
+    </body>
+</html>
