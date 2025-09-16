@@ -8,7 +8,7 @@
         <a-sky color="lightblue"></a-sky>  
         <a-camera><a-cursor fuse="true" fuse-timeout="1000"></a-cursor></a-camera>
         <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#946500"></a-plane>
-        <a-sphere position="-1 1 -4" radius="0.5" color="#ff00c8"
+        <a-cone position="-1 1 -4" radius-bottom="0.5" radius-top="0" color="#ff00c8"
         animation="
         property: position;
         from: -1 1 -4;
@@ -18,7 +18,7 @@
         property: color;
         from:#ff00c8;
         to:#00bfff;
-        startEvents: click;"></a-sphere>
+        startEvents: click;"></a-cone>
         <a-sphere position="1 1 -4" radius="0.5" color="#00bfff"
         animation="
         property: position;
